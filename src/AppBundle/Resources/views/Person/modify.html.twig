@@ -1,7 +1,10 @@
-{% extends "::base.html.twig" %}
+{% extends "base.html.twig" %}
 
 {% block title %}AppBundle:Person:Modify{% endblock %}
 
 {% block body %}
 <h1>Welcome to the Person:Modify page</h1>
+    {{ form_start(personForm) }}
+    {{ form_widget(personForm) }}
+    {{ form_end(personForm) }}
 {% endblock %}
