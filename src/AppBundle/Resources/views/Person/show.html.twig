@@ -3,5 +3,9 @@
 {% block title %}AppBundle:Person:Show{% endblock %}
 
 {% block body %}
-<h1>Welcome to the Person:Show page</h1>
+<h1>Strona użytkownika {{ person.name }} {{ person.surname }}</h1>
+    {{ person.photo }}<br>
+    Dane osobowe: {{ person.name }} {{ person.surname }}<br>
+    Opis: {{ person.description }}<br>
+
 {% endblock %}

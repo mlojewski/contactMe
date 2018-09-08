@@ -1,7 +1,13 @@
-{% extends "::base.html.twig" %}
+{% extends "base.html.twig" %}
 
 {% block title %}AppBundle:Person:ShowAll{% endblock %}
 
 {% block body %}
-<h1>Welcome to the Person:ShowAll page</h1>
+<h1>Lista kontaktów</h1>
+    <ul>
+    {% for element in lista %}
+   <li> {{ element.name }} {{ element.surname }}<br>
+    {{ element.description }}</li>
+    {% endfor %}
+    </ul>
 {% endblock %}

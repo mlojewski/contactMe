@@ -70,37 +70,48 @@ class PersonController extends Controller
             $photo=$personForm['photo']->getData();
             $personToModify->setPhoto($photo);
             $em->flush();
-            return $this->redirectToRoute('show');
+            return $this->redirectToRoute('app_person_showall');
         }
         return $this->render('@App/Person/modify.html.twig', array('personForm'=>$personForm->createView()));
     }
 
     /**
-     * @Route("/Delete")
+     * @Route("/Delete/{id}")
      */
-    public function DeleteAction()
+    public function DeleteAction($id)
     {
-        return $this->render('AppBundle:Person:delete.html.twig', array(
-            // ...
-        ));
+        $personToDelete=$this->getDoctrine()->getRepository('AppBundle:Person')->find($id);
+        $em=$this->getDoctrine()->getManager();
+        if ($personToDelete){
+            $em->remove($personToDelete);
+            $em->flush();
+            return $this->render('@App/Person/delete.html.twig', array('personToDelete'=>$personToDelete));
+        }
+        return new Response("nie ma takiego użytkownika");
     }
 
     /**
-     * @Route("/Show", name="show")
+     * @Route("/Show/{id}", name="show")
      */
-    public function ShowAction()
+    public function ShowAction($id)
     {
-        return $this->render('@App/Person/show.html.twig');
+        $personToShow=$this->getDoctrine()->getRepository('AppBundle:Person')->find($id);
+        if (!$personToShow){
+            return new Response("nie ma osoby o id: ".$id);
+        }
+        return $this->render('@App/Person/show.html.twig', array('person'=>$personToShow));
     }
 
     /**
-     * @Route("/ShowAll")
+     * @Route("/ShowAll", name="showall")
      */
     public function ShowAllAction()
     {
-        return $this->render('AppBundle:Person:show_all.html.twig', array(
-            // ...
-        ));
+        $personList=$this->getDoctrine()->getRepository('AppBundle:Person')->findAll();
+        if(empty($personList)){
+            return new Response("lista jest pusta");
+        }
+        return $this->render('@App/Person/show_all.html.twig', array('lista'=>$personList ));
     }
 
 }
