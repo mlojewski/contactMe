@@ -1,0 +1,10 @@
+{% extends "base.html.twig" %}
+
+{% block title %}AppBundle:Address:Modify{% endblock %}
+
+{% block body %}
+<h1>Welcome to the Address:Modify page</h1>
+    {{ form_start(addressForm) }}
+    {{ form_widget(addressForm) }}
+    {{ form_end(addressForm) }}
+{% endblock %}
