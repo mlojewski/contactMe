@@ -2,7 +2,6 @@
 
 namespace AppBundle\Controller;
 
-use AppBundle\AppBundle;
 use AppBundle\Entity\Address;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -25,7 +24,6 @@ class AddressController extends Controller
         $newAddress=$query->setMaxResults(1)->getOneOrNullResult();
         return $this->render('@App/Address/Add_address.html.twig', array('newAddress'=> $newAddress));
     }
-
     /**
      * @Route("/create_address")
      */
@@ -82,22 +80,11 @@ class AddressController extends Controller
             $addressToModify->setFlatNumber($flatNumber);
             $addressToModify->setPostalCode($postalCode);
             $em->flush();
-            return $this->redirectToRoute('showalladdress');
+            return $this->redirectToRoute('showall');
         }
         return $this->render('@App/Address/modify_address.html.twig', array('addressForm'=>$addressForm->createView()));
     }
-    /**
-     * @Route("/showalladdress", name="showalladdress")
-     */
-    public function ShowAllAction()
-    {
 
-        $addressList=$this->getDoctrine()->getRepository('AppBundle:Address')->findAll();
-        if(empty($addressList)){
-            return new Response("lista jest pusta");
-        }
-        return $this->render('@App/Address/showaddress.html.twig', array('lista'=>$addressList ));
-    }
 
 
 }

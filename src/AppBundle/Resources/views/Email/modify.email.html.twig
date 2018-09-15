@@ -1,0 +1,10 @@
+{% extends "base.html.twig" %}
+
+{% block title %}AppBundle:Email:modify_email{% endblock %}
+
+{% block body %}
+<h1>Welcome to the Email:modify_email page</h1>
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+{% endblock %}
