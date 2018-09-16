@@ -19,9 +19,10 @@ class EmailController extends Controller
      */
     public function add_emailAction()
     {
-        return $this->render('@App/Email/add.email.html.twig', array(
-            // ...
-        ));
+        $em=$this->getDoctrine()->getManager();
+        $query=$em->createQuery('SELECT email FROM AppBundle:Email email ORDER BY email.id DESC');
+        $newEmail=$query->setMaxResults(1)->getOneOrNullResult();
+        return $this->render('@App/Email/add.email.html.twig', array('newEmail'=> $newEmail));
     }
 
     /**
