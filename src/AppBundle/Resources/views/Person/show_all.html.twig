@@ -6,8 +6,9 @@
 <h1>Lista kontaktów</h1>
     <ul>
     {% for element in lista %}
-   <li> {{ element.name }} {{ element.surname }}<br>
-    {{ element.description }}</li>
+   <li> <a href="Show/{{ element.id }}">{{  element.name }}</a> {{ element.surname }}<button type="button">edytuj</button><button type="button">usuń</button> </li>
     {% endfor %}
     </ul>
+    <br>
+    <a href="{{ path('app_person_createnew') }}">dodaj nową osobę</a>
 {% endblock %}

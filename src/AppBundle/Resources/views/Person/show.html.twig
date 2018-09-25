@@ -7,5 +7,29 @@
     {{ person.photo }}<br>
     Dane osobowe: {{ person.name }} {{ person.surname }}<br>
     Opis: {{ person.description }}<br>
-
+    <a href="{{ path('app_person_modify', {'id': person.id}) }}"> modyfikuj dane użytkownika</a>
+    <br>
+Adresy:
+<ul>
+    {% for oneaddress in address %}
+    <li>{{ oneaddress.city }} {{ oneaddress.street }} {{ oneaddress.houseNumber }}/{{ oneaddress.flatNumber }} {{ oneaddress.postalCode }}  <a href="{{ path('app_address_modify', {'id': oneaddress.id}) }}">edytuj</a> </li>
+    {% endfor %}
+</ul>
+    <br>
+    <a href="{{ path('app_address_create') }}">dodaj nowy adres</a><br>
+    <br>Telefony:
+    <ul>
+        {% for onephone in phone %}
+        <li>{{ onephone.number }} {{ onephone.type }}  <a href="{{ path('app_phone_modify_phone', {'id': onephone.id}) }}">edytuj</a></li>
+        {% endfor %}
+    </ul><br>
+    <a href="{{ path('app_phone_create_phone') }}">dodaj nowy telefon</a><br>
+    <br>E-maile:
+    {% for oneemail in email %}
+    <li>{{ oneemail.emailaddress }}; {{ oneemail.type }}  <a href="{{ path('app_email_modify_email', {'id': oneemail.id}) }}">edytuj</a></li>
+    {% endfor %}
+    <br>
+    <a href="{{ path('app_email_create_email') }}">dodaj email</a><br>
+    <br>
+    <a href="{{ path('showall') }}">wróć na główną</a>
 {% endblock %}

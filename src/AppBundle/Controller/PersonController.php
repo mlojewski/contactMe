@@ -96,18 +96,23 @@ class PersonController extends Controller
     public function ShowAction($id)
     {
         $personToShow=$this->getDoctrine()->getRepository('AppBundle:Person')->find($id);
+        $addressToShow=$this->getDoctrine()->getRepository('AppBundle:Address')->findByPerson($id);
+        $phoneToShow=$this->getDoctrine()->getRepository('AppBundle:Phone')->findByPerson($id);
+        $emailToShow=$this->getDoctrine()->getRepository('AppBundle:Email')->findByPerson($id);
         if (!$personToShow){
             return new Response("nie ma osoby o id: ".$id);
         }
-        return $this->render('@App/Person/show.html.twig', array('person'=>$personToShow));
+        return $this->render('@App/Person/show.html.twig', array('person'=>$personToShow, 'address'=>$addressToShow, 'phone'=>$phoneToShow, 'email'=>$emailToShow));
     }
 
     /**
-     * @Route("/ShowAll", name="showall")
+     * @Route("/", name="showall")
      */
     public function ShowAllAction()
     {
-        $personList=$this->getDoctrine()->getRepository('AppBundle:Person')->findAll();
+        $em=$this->getDoctrine()->getManager();
+        $query=$em->createQuery('SELECT person FROM AppBundle:Person person ORDER BY person.surname ASC');
+        $personList=$query->getResult();
         if(empty($personList)){
             return new Response("lista jest pusta");
         }
