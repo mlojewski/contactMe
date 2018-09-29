@@ -7,7 +7,8 @@
     {{ person.photo }}<br>
     Dane osobowe: {{ person.name }} {{ person.surname }}<br>
     Opis: {{ person.description }}<br>
-    <a href="{{ path('app_person_modify', {'id': person.id}) }}"> modyfikuj dane użytkownika</a>
+    <button type="button" name="modify_user" id="{{ person.id }}">modyfikuj dane</button>
+
     <br>
 Adresy:
 <ul>
@@ -16,20 +17,46 @@ Adresy:
     {% endfor %}
 </ul>
     <br>
-    <a href="{{ path('app_address_create') }}">dodaj nowy adres</a><br>
+    <button type="button" name="add_address">dodaj adres</button>
+
     <br>Telefony:
     <ul>
         {% for onephone in phone %}
         <li>{{ onephone.number }} {{ onephone.type }}  <a href="{{ path('app_phone_modify_phone', {'id': onephone.id}) }}">edytuj</a></li>
         {% endfor %}
     </ul><br>
-    <a href="{{ path('app_phone_create_phone') }}">dodaj nowy telefon</a><br>
+    <button type="button" name="add_phone">dodaj telefon</button>
     <br>E-maile:
     {% for oneemail in email %}
     <li>{{ oneemail.emailaddress }}; {{ oneemail.type }}  <a href="{{ path('app_email_modify_email', {'id': oneemail.id}) }}">edytuj</a></li>
     {% endfor %}
     <br>
-    <a href="{{ path('app_email_create_email') }}">dodaj email</a><br>
+    <button type="button" name="add_email">dodaj email</button>
     <br>
     <a href="{{ path('showall') }}">wróć na główną</a>
+{% endblock %}
+{% block javascripts %} {{  parent() }}
+    <script type="text/javascript">
+        var modifyUser = document.getElementsByName("modify_user");
+
+        modifyUser[0].addEventListener("click", function (event) {
+            window.location.href="/Modify/"+this.id;
+        })
+        var addAddress=document.getElementsByName("add_address");
+
+        addAddress[0].addEventListener("click", function (event) {
+            window.location.href="/create_address";
+        })
+
+        var addPhone=document.getElementsByName("add_phone");
+        addPhone[0].addEventListener("click",function (event) {
+            window.location.href="/create_phone";
+        })
+
+        var addEmail=document.getElementsByName("add_email");
+        addEmail[0].addEventListener("click", function (event) {
+            window.location.href="/create_email";
+        })
+
+    </script>
 {% endblock %}

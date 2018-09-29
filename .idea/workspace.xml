@@ -16,16 +16,9 @@
       <change beforePath="$PROJECT_DIR$/../WAR_PHP_S_07_Podstawy_Programowania" beforeDir="false" afterPath="$PROJECT_DIR$/../WAR_PHP_S_07_Podstawy_Programowania" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WAR_PHP_S_07_Workshop_3" beforeDir="false" afterPath="$PROJECT_DIR$/../WAR_PHP_S_07_Workshop_3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WAR_PHP_S_07_Zaawansowane_PHP" beforeDir="false" afterPath="$PROJECT_DIR$/../WAR_PHP_S_07_Zaawansowane_PHP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/contactMe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/contactMe.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/PersonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/PersonController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Address/Add_address.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Address/Add_address.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Email/add.email.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Email/add.email.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Person/add.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Person/add.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Person/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Person/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Person/show_all.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Person/show_all.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Phone/add.phone.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Phone/add.phone.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../paczkomat/paczkowarsztat" beforeDir="false" afterPath="$PROJECT_DIR$/../paczkomat/paczkowarsztat" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,28 +48,28 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="php" value="19" />
-          <entry key="twig" value="38" />
+          <entry key="twig" value="41" />
           <entry key="yml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PHP" value="19" />
-          <entry key="Twig" value="38" />
+          <entry key="Twig" value="41" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="php" value="5657" />
-          <entry key="twig" value="1634" />
+          <entry key="twig" value="3041" />
           <entry key="yml" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PHP" value="5657" />
-          <entry key="Twig" value="1634" />
+          <entry key="Twig" value="3041" />
           <entry key="YAML" value="62" />
         </counts>
       </usages-collector>
@@ -87,8 +80,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AddressController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+              <folding>
+                <element signature="e#2129#2168#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,7 +92,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PersonController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="595">
               <caret line="104" column="161" selection-start-line="104" selection-start-column="161" selection-end-line="104" selection-end-column="161" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
@@ -116,11 +112,47 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Address/Add_address.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="e#12#26#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Address/create_address.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <folding>
+                <element signature="e#12#26#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Person/show_all.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
+            <state relative-caret-position="527">
+              <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+              <folding>
+                <element signature="e#12#26#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -128,8 +160,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Person/show.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+            <state>
+              <caret column="14" selection-start-column="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -164,10 +196,11 @@
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/PersonController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Phone/add.phone.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Person/show.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Email/add.email.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Address/Add_address.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Person/add.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Person/show.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Person/show_all.html.twig" />
       </list>
     </option>
@@ -334,6 +367,11 @@
               <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="Phone" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
+            <path>
+              <item name="contactMe" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="vendor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -444,16 +482,15 @@
       <option name="presentableId" value="Default" />
       <updated>1536210904901</updated>
       <workItem from="1536210906210" duration="51517000" />
-      <workItem from="1537508389624" duration="5046000" />
+      <workItem from="1537508389624" duration="18077000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56563000" />
+    <option name="totallyTimeSpent" value="69594000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="-4" width="1543" height="904" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12959252" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -525,9 +562,6 @@
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/PersonRepository.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Person/delete.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -564,13 +598,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Address/showaddress.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Address/create_address.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Email/create.email.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -609,27 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PersonController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="104" column="161" selection-start-line="104" selection-start-column="161" selection-end-line="104" selection-end-column="161" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-            <element signature="e#1393#1427#0#PHP" expanded="true" />
-            <element signature="e#1814#1841#0#PHP" expanded="true" />
-            <element signature="e#3705#3735#0#PHP" expanded="true" />
-            <element signature="e#3943#3961#1#PHP" expanded="true" />
-            <element signature="e#4154#4184#0#PHP" expanded="true" />
-            <element signature="e#4462#4480#1#PHP" expanded="true" />
-            <element signature="e#4553#4572#1#PHP" expanded="true" />
-            <element signature="e#4652#4669#1#PHP" expanded="true" />
-            <element signature="e#4747#4764#1#PHP" expanded="true" />
-            <element signature="e#4820#4848#0#PHP" expanded="true" />
-            <element signature="e#5360#5392#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Email.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -647,13 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AddressController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Phone/add.phone.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -668,16 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Address/Add_address.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -714,17 +703,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Address/Add_address.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Address/create_address.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PersonController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="104" column="161" selection-start-line="104" selection-start-column="161" selection-end-line="104" selection-end-column="161" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+            <element signature="e#1393#1427#0#PHP" expanded="true" />
+            <element signature="e#1814#1841#0#PHP" expanded="true" />
+            <element signature="e#3705#3735#0#PHP" expanded="true" />
+            <element signature="e#3943#3961#1#PHP" expanded="true" />
+            <element signature="e#4154#4184#0#PHP" expanded="true" />
+            <element signature="e#4462#4480#1#PHP" expanded="true" />
+            <element signature="e#4553#4572#1#PHP" expanded="true" />
+            <element signature="e#4652#4669#1#PHP" expanded="true" />
+            <element signature="e#4747#4764#1#PHP" expanded="true" />
+            <element signature="e#4820#4848#0#PHP" expanded="true" />
+            <element signature="e#5360#5392#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AddressController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+          <folding>
+            <element signature="e#2129#2168#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Person/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Person/show_all.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
+        <state relative-caret-position="527">
+          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

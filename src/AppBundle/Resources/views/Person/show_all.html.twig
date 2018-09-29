@@ -6,9 +6,27 @@
 <h1>Lista kontaktów</h1>
     <ul>
     {% for element in lista %}
-   <li> <a href="Show/{{ element.id }}">{{  element.name }}</a> {{ element.surname }}<button type="button">edytuj</button><button type="button">usuń</button> </li>
+   <li> <a href="Show/{{ element.id }}">{{  element.name }}</a> {{ element.surname }}<button type="button" id="{{ element.id }}" name="edit">edytuj</button><button type="button"class="btn btn-danger" id="delete">usuń</button> </li>
     {% endfor %}
     </ul>
     <br>
     <a href="{{ path('app_person_createnew') }}">dodaj nową osobę</a>
+{% endblock %}
+{% block javascripts %} {{  parent() }}
+    <script type="text/javascript">
+        var edit = document.getElementsByName("edit");
+        for (var i = 0; i< edit.length; i++){
+            edit[i].addEventListener("click", function (event) {
+                window.location.href="Modify/"+this.id;
+            })
+        }
+
+        var del = document.getElementById("delete");
+        for (var i=0; i<del.length; i++){
+            del[i].addEventListener("click", function (event) {
+                window.location.href="Delete/"+this.id;
+            })
+        }
+
+    </script>
 {% endblock %}
